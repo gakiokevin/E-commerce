@@ -1,0 +1,39 @@
+.nav {
+   width:100%;
+}
+
+.product {
+   width: 100%;
+   border: 2px solid red;
+   text-align: start;
+   margin: 5px auto;
+   overflow: hidden;
+   box-sizing: border-box;
+}
+.product img {
+   width:60%;
+   max-height:150px;
+   object-fit: contain;
+   margin: 3px;
+   padding: 3px;
+   border:3px solid green;
+}
+.product button {
+   width:98%;
+   border: none;
+   padding:3px;
+   font-size: 24px;
+   background-color: orange;
+   border-radius: 4px;
+   margin:2px auto;
+   margin-left: 4px;
+}
+.product .description {
+   color: silver;
+   padding: 8px;
+}
+.product .price {
+   color:black;
+   padding: 5px;
+   margin-left:3px;
+}

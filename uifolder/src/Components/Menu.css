@@ -1,0 +1,63 @@
+#shortcut {
+  background-color: blue;
+  color: white;
+  position: absolute;
+  top: 0;
+  height: 80%;
+  margin-left: 2px;
+  overflow: hidden;
+  width: 70%;
+  text-align: center;
+}
+
+.show {
+  animation: slideIn 1s ease-in-out;
+}
+.hide {
+  display: none;
+}
+@keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+.close {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  margin-bottom: 8px;
+}
+.close p:first-child {
+  font-size: 35px;
+  margin-left: 10px;
+}
+.close p.logo {
+  margin-left: 50px;
+}
+#shortcut h2 {
+  font-size: 20px;
+  margin-top: 3px;
+  margin-left: -40px;
+}
+#shortcut ul {
+  margin-left: -40px;
+}
+#shortcut li {
+  padding: 14px 15px;
+}
+#shortcut li:last-child {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 27%;
+  bottom: 20%;
+}
+
+#shortcut li:last-child p {
+  margin-top: 3px;
+  margin-left: 3px;
+}

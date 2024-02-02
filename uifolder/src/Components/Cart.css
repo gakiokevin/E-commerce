@@ -1,0 +1,23 @@
+.emptyCart {
+   background-color: lightgrey;
+   text-align: center;
+}
+.emptyCart .cart-icon {
+   font-size: 40px;
+   margin:18px auto;
+   color:burlywood;
+}
+
+.emptyCart .cart-tag {
+color:#313133;
+}
+.emptyCart .cart-btn {
+   width:90%;
+   text-transform: uppercase;
+   border: none;
+   background-color: orange;
+   padding:10px auto;
+   font-size: 18px;
+   border-radius: 3px;
+   margin: 15px auto;
+}
