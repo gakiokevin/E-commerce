@@ -1,5 +1,15 @@
+.path {
+   color:#313133;
+   font-size: larger;
+   margin-left: 3px;
+
+}
+.path span {
+   margin: 4px 4px;
+   font-size: 17px;
+}
 .emptyCart {
-   background-color: lightgrey;
+   background-color: #fff;
    text-align: center;
 }
 .emptyCart .cart-icon {
@@ -20,4 +30,33 @@ color:#313133;
    font-size: 18px;
    border-radius: 3px;
    margin: 15px auto;
+}
+table {
+   width:100%;
+   background-color: #fff;
+   
+}
+table,th,td {
+   border: 2px solid silver;
+   border-collapse: collapse;
+   text-align: center;
+}
+th:first-child,th:nth-child(2){
+   width:50%;
+}
+th {
+   padding: 4px;
+}
+tbody tr:not(:last-child) {
+   height:38px;
+   overflow: hidden;
+}
+tbody tr:last-child td {
+   position: relative;
+   left:-35px;
+}
+tbody tr td > img {
+   width:100%;
+   height:100%;
+   object-fit:cover;
 }

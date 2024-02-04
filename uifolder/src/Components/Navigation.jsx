@@ -15,7 +15,7 @@ const Nav = ({ s,items}) => {
             <p onClick={() => s()}>
               <MenuIcon />
             </p>
-              <Link>
+              <Link to="/">
               <p className="logo">
                 K&M
                 <br />

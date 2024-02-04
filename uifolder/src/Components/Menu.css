@@ -1,6 +1,6 @@
 #shortcut {
-  background-color: blue;
-  color: white;
+  background-color: lightgrey;
+  color: #fff;
   position: absolute;
   top: 0;
   height: 80%;
@@ -8,6 +8,7 @@
   overflow: hidden;
   width: 70%;
   text-align: center;
+  z-index: 1;
 }
 
 .show {
@@ -48,6 +49,7 @@
 }
 #shortcut li {
   padding: 14px 15px;
+  color: #fff;
 }
 #shortcut li:last-child {
   display: flex;
