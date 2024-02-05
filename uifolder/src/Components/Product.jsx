@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Nav from "./Navigation";
 import "./Product.css";
-const Product = ({ AddToCart,items }) => {
+const Product = ({ AddToCart,items,isVisible}) => {
   const location = useLocation();
   const [apiData, SetProduct] = useState(null);
   //function that format the location to match the path paremeter of fakeapi store
@@ -30,12 +30,11 @@ const Product = ({ AddToCart,items }) => {
 
     queryProduct();
   }, [location.pathname]);
-  useEffect(() => {
-    console.log(apiData);
-  }, [apiData]);
-
+  
   return (
     <div style={{ overflow: "hidden" }}>
+
+      <p className={`success ${isVisible ? 'show':'hide'}`}>Product added successfully</p>
       <Nav items={items}/>
 
       {apiData ? (
@@ -59,7 +58,8 @@ const Product = ({ AddToCart,items }) => {
 };
 
 Product.propTypes = {
-  AddToCart: PropTypes.func,
-  items:PropTypes.number
+  AddToCart: PropTypes.func.isRequired,
+  items:PropTypes.number,
+  isVisible:PropTypes.bool
 };
 export default Product;
